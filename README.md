@@ -22,3 +22,13 @@ var output = findCastMembersByLetter(movies, 'J');
 console.log(output); // => ['Jimmy Stewart', 'Jessica Lange']
 ```
 
+### Week 3
+Create a function called `filterByRelatedMovieYear` that takes in two parameters - `array` & `decade`; `array` represents an
+array of movie objects; `decade` represents a string of the decade the movie came out (example: '90s', '80s'). This function 
+should use the `_.filter()` method you created in underpants.js to return a new array of only the movies that a related movie from the input decade.
+
+```
+var output = filterbyRelatedMovieYear(movies, '80s');
+console.log(output); // [{Rear Window}, {Fright Night}, {Blue Velvet}]
+```
+
