@@ -25,10 +25,48 @@ console.log(output); // => ['Jimmy Stewart', 'Jessica Lange']
 ### Week 3
 Create a function called `filterByRelatedMovieYear` that takes in two parameters - `array` & `decade`; `array` represents an
 array of movie objects; `decade` represents a string of the decade the movie came out (example: '90s', '80s'). This function 
-should use the `_.filter()` method you created in underpants.js to return a new array of only the movies that a related movie from the input decade.
+should use the `_.filter()` method you created in underpants.js to return a new array of only the movies that a related movie 
+from the input decade.
 
 ```
 var output = filterbyRelatedMovieYear(movies, '80s');
 console.log(output); // [{Rear Window}, {Fright Night}, {Blue Velvet}]
 ```
 
+### Week 4
+1. Create a function called `getRelatedTitles` that takes in one parameter - `array` - which represents an array of movie objects. 
+This function should use the native reduce method to return a new array of only the titles of the related movies in each movie
+object's relatedMovies property.
+
+```
+var output = getRelatedMovies(movies);
+console.log(output); // => ['Psycho', 'Body Double', 'Night of the Hunter', 'Misery', 'Lost Boys', 'Near Dark', 'Parents'];
+```
+
+2. Create a function called `filterByCastName` that takes in two paramters - `array`, `letter`; `array` represents an array of movie
+objects and `letter` represents a string of an individual letter. This function should use the native filter method to return a new
+array of only the movies that have a cast member whose first name begins with the input `letter`. Make sure your function is case
+insensitive.
+
+```
+var output = filterByCastName(movies, 'j');
+console.log(output); // [{Rear Window}, {Cape Fear}]
+```
+
+3. Create a function called `mapRelatedMovies` that takes in one parameter - `array` - which represents an array of movie objects. This
+Function should use the native map method to return a new array of sub arrays. Each subarray should contain the titles of the related movies.
+
+```
+var output = mapRelatedMovies(movies);
+console.log(output);
+/*
+// =>
+[
+  [ 'Psycho', 'Body Double' ],
+  [ 'Night of the Hunter', 'Misery' ],
+  [ 'Lost Boys', 'Near Dark' ],
+  [ 'Parents' ]
+]
+*/
+
+```

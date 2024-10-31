@@ -69,14 +69,19 @@ var movies = [
 ];
 // Problem #1 //
 function getRelatedTitles(array){
-    return array.reduce((a, c) => a.concat(c.relatedMovies.map(movie => movie.title)), []);
+    
 }
 
 
 
 // Problem #2 //
-// function(){
+function filterByCastName(array, letter){
+    
+}
 
-// }
 
-console.log(getRecommendedTitles(movies));
+// Problem #3 //
+function mapRelatedMovies(array){
+    
+}
+

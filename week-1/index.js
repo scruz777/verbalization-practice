@@ -25,5 +25,4 @@ function createWeirdTitle(array){
   
 }
 
-console.log(createWeirdTitle(movies));
 

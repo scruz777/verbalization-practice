@@ -28,5 +28,3 @@ var movies = [
 function findCastMembersByLetter(array, letter){
    
 }
-
-console.log(findCastMembersByLetter(movies, 'J'));
